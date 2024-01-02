@@ -20,3 +20,6 @@
 2. BatchNormalization dùng để chuẩn hoá dữ liệu, để các giá trị nằm trong khoảng [-1,1], giúp cho việc huấn luyện nhanh hơn, và tránh overfitting.
 3. MaxPooling2D dùng để giảm kích thước của ma trận, giúp cho việc huấn luyện nhanh hơn, và tránh overfitting.
 4. Conv2D dùng để tìm ra các đặc trưng của dữ liệu, nó sẽ trượt qua từng dòng của dữ liệu, để tìm ra các đặc trưng của dữ liệu, đơn giản hoá, đây chính là ma trận 2 chiều
+
+## Kết luận
+Mô hình này có độ chính xác trên 70%
