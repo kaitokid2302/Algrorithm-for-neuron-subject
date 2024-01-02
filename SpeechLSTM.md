@@ -1,4 +1,5 @@
 # Thuật toán CNN và LSTM cho bài toán nhận dạng tiếng nói
+Dữ liệu được lấy từ bộ dataset facial-expression-recognition-dataset. Sử dụng ImageDataGenerator của Keras để tự động tải và tiền xử lý hình ảnh. Hình ảnh được chuyển đổi kích thước thành 48x48 pixels và chuyển thành dạng grayscale.
 ## Đọc dữ liệu
 1. Ban đầu, dữ liệu sẽ được đọc từ file csv - đã được chuẩn hoá tín hiệu âm thanh thành các con số
 2. Mỗi hàng tượng trưng cho 1 file âm thanh, có khá nhiều ô trống, vì thế ta sẽ chèn các ô trống này bằng 0, để làm cho toàn bộ file âm thanh có cùng độ dài, kích thước ma trận như nhau
