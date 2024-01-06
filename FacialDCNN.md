@@ -24,9 +24,10 @@ Chi Tiết Kiến Trúc Mô Hình
 • Block 3: 2 lớp Conv2D (256 filters, 3x3 kernel), BatchNormalization, MaxPooling2D, Dropout (0.5).
 • Flatten, Dense(128), BatchNormalization, Dropout (0.6).
 • Lớp đầu ra Dense với hàm kích hoạt softmax.
-Huấn Luyện và Đánh Giá
+
 
 ## Huấn luyện
 • Chia dữ liệu thành hai phần: tập huấn luyện và tập kiểm thử với tỉ lệ 80%-20%.
+• Ban đầu, các thông số của mô hình sẽ được khởi tạo ngẫu nhiên. Sau khi dùng thuật toán lan truyền ngược (backpropagation) và thuật toán tối ưu hóa Adam để tìm các thông số tối ưu, mô hình sẽ được huấn luyện với các thông số này. Các thông số cần tìm ở đây là các ma trận kernel - ma trận 2 chiều, lớp Dense - ma trận 1 chiều, và các thông số khác.
 • Huấn luyện mô hình với các thông số tối ưu, sau đó đánh giá hiệu suất trên tập kiểm thử.
 • Khi thực hiện, mô hình sẽ trả về một ma trận 7 cột, mỗi cột tương ứng với xác suất của một cảm xúc. Cảm xúc có xác suất cao nhất sẽ được chọn là kết quả cuối cùng.

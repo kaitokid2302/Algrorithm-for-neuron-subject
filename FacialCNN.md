@@ -26,5 +26,6 @@ Dropout (0.5) .
 • Lớp đâu ra Dense với activation softmax .
 
 ## Kết Quả
-Ta sẽ chia dữ liệu thành 2 tập, tập train và tập test, với tỉ lệ 80% - 20%. Và tìm các thông số cho mô hình, sau đó đánh giá mô hình bằng tập test.  
-Khi chạy mô hình, ta sẽ thu được 1 ma trận cảm xúc, với 7 cột, mỗi cột tương ứng với 1 cảm xúc, và ta sẽ lấy cảm xúc có xác xuất cao nhất, là cảm xúc của hình ảnh đó.
+• Ta sẽ chia dữ liệu thành 2 tập, tập train và tập test, với tỉ lệ 80% - 20%. Và tìm các thông số cho mô hình, sau đó đánh giá mô hình bằng tập test.    
+• Ban đầu, các thông số của mô hình sẽ được khởi tạo ngẫu nhiên. Sau khi dùng thuật toán lan truyền ngược (backpropagation) và thuật toán tối ưu hóa Adam để tìm các thông số tối ưu, mô hình sẽ được huấn luyện với các thông số này. Các thông số cần tìm ở đây là các ma trận kernel - ma trận 2 chiều, lớp Dense - ma trận 1 chiều, và các thông số khác.  
+• Khi chạy mô hình, ta sẽ thu được 1 ma trận cảm xúc, với 7 cột, mỗi cột tương ứng với 1 cảm xúc, và ta sẽ lấy cảm xúc có xác xuất cao nhất, là cảm xúc của hình ảnh đó.  
